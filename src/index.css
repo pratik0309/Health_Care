@@ -1,0 +1,267 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+
+html {
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul {
+  list-style: none;
+  display: flex;
+  padding:0;
+  margin: 0;
+}
+ul li {
+  color:#fff;
+  padding: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* Navbar */
+nav {
+position: fixed;
+z-index: 1;
+top:0;
+width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  justify-content: space-around;
+  background: #000;
+}
+
+nav .logo h3 span {
+  color: red;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  color: #000;
+  border: black 1px solid;
+  transition: all 0.7s;
+}
+
+.button:hover {
+  background: #167bff;
+  color: #fff;
+}
+
+.button a {
+  color: black
+}
+
+.padding-top {
+  padding-top: 100px;
+}
+/* Home section */
+.home-section {
+   min-height: 100vh;
+   background-position: center;
+    background-size: cover;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)),
+        url(./assests/huy-phan-QCF2ykBsC2I-unsplash.jpg);
+        position: relative;
+}
+
+.content {
+  position: absolute;
+  top:30%;
+  left:20%;
+  color : #fff;
+}
+.content .h2-font {
+  font-size: 3.4rem;
+}
+.content .h2-font span {
+  font-weight: 800;
+  color:rgb(196, 244, 75);
+  text-transform: uppercase;
+}
+@keyframes jump {
+  from {
+    margin-left: 30%;
+    width: 100%;
+  }
+
+  75% {
+    font-size: 150%;
+    margin-left: 15%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 60%;
+  }
+}
+.content p {
+   font-weight: bolder;
+   font-size: 1.1rem;
+  animation: 2s infinite alternate jump;
+  color: beige;
+}
+
+
+
+/* About Section */
+#about-section {
+  padding: 2.4rem;
+}
+#about-section h3 {
+   font-size: 2.2rem;
+   font-weight: bold;
+}
+#about-section p {
+   font-size: 1.5rem;
+}
+#about-section p span {
+  color: rgb(245, 40, 40);
+  font-weight: bold;
+}
+.one {
+   padding: 20px;
+   min-height: 100px;
+   margin: 10px 0 10px 0;
+}
+.one h5 {
+  margin: 10px;
+  color:red;
+  font-size: 3rem;
+}
+.one h6 {
+  font-size: 1.3rem;
+}
+
+
+/* Service Section */
+#service-section {
+   padding: 1.2rem;
+}
+#service-section .second-section h3 {
+  color:rgb(114, 80, 80);
+    position: relative;
+}
+.common h3 {
+  color:rgb(114, 80, 80);
+    position: relative;
+}
+#service-section h3::after {
+ content: "";
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  background: rgb(100, 64, 64);
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+ .common h3::after {
+ content: "";
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  background: rgb(100, 64, 64);
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.service-card-dabba{
+   padding: 40px;
+}
+.service-card-dabba:hover{
+ border-color: red;
+  transform: rotate(15deg);}
+.service-title-color{
+  color: red;
+  font-weight: bold;
+}
+
+.solution {
+  width:100%;
+  color: #000;
+  margin: 40px;
+}
+
+.footer {
+height: 40px;
+  background: rgb(96, 65, 65);
+  color: #fff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#submitForm {
+  max-width: 600px;
+  margin: 100px auto;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  font-weight: 400;
+  border-radius: 15px;
+  padding: 40px 55px 45px 55px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+#submitForm label {
+  font-weight: bold;
+}
+
+#submitForm h3 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+.parent-container {
+    width: 100%;
+    min-height: 100vh;
+}
+.first-section {
+  padding: 15px 20px;
+  /* background: rgba(34, 35, 58, 0.2); */
+}
+.second-section {
+    padding: 15px;
+    /* background: rgba(34, 35, 58, 0.2); */
+}
+.info h5 {
+  padding: 15px;
+  transition: all 0.7s;
+}
+.info h5:hover {
+  background: black;
+  color: #fff;
+}
+
