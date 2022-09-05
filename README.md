@@ -1,6 +1,6 @@
 
 # Health_Care
-The app provides a reminder for the elderly for their daily medications, shows nearby hospitals, book appointment of hospitals, option to add important notes based on their priority, option to add doctor appointment reminder and alert emergency contacts regarding the same, helps in tracking the person's important health vitals.
+The Web application provides a reminder for the elderly for their daily medications, shows nearby hospitals, book appointment of hospitals, option to add important notes based on their priority, option to add doctor appointment reminder and alert emergency contacts regarding the same, helps in tracking the person's important health vitals.
 
 # Key Features
 
